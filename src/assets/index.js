@@ -25,8 +25,13 @@ import tailwind from "./tech/tailwind.png"
 import threejs from "./tech/threejs.svg"
 import typescript from "./tech/typescript.png"
 
+import gitHub from "./social/github.png"
+import linkdin from "./social/linkdin.png"
+import twitterX from "./social/twitterX.svg"
+
 
 export{
+    
     logo,
     backend,
     creator,
@@ -50,5 +55,9 @@ export{
     reactjs,
     tailwind,
     threejs,
-    typescript
+    typescript,
+    gitHub,
+    linkdin,
+    twitterX,
+    
 }

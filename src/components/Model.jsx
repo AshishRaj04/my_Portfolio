@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import Loader from "./Loader";
 
 const Three = () => {
-  const computer = useGLTF("./3dModel/gltf/");
+  const computer = useGLTF("./gltf/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -47,4 +47,3 @@ const Model = () => {
 export default Model;
 
 
-//public\3dModel\free_merc_hovercar.glb

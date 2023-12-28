@@ -18,6 +18,12 @@ import {
   tailwind,
   threejs,
   typescript,
+  gitHub,
+  linkdin,
+  twitterX,
+  
+  
+  
 } from "../assets";
 
 const navLinks = [
@@ -128,6 +134,24 @@ const testimonials = [
   },
 ];
 
+const socialIcons = [
+  {
+    link: gitHub,
+    altText: "github icon",
+    url:"https://github.com/AshishRaj04"
+  },
+  {
+    link: linkdin,
+    altText: "linkdin icon",
+    url:"https://github.com/AshishRaj04"
+  },
+  {
+    link: twitterX,
+    altText: " twitter icon ",
+    url:"https://github.com/AshishRaj04"
+  },
+];
+
 const projects = [
   {
     name: "Chat GPT Clone",
@@ -184,7 +208,6 @@ const projects = [
         name: "Material UI",
         color: "green-text-gradient",
       },
-      
     ],
     image: portfolio,
     source_code_link: "https://github.com/AshishRaj04/Keeper-App.git",
@@ -202,11 +225,10 @@ const projects = [
         name: "NPM",
         color: "green-text-gradient",
       },
-      
     ],
     image: portfolio,
     source_code_link: "https://github.com/AshishRaj04/QR-Code-Generator.git",
   },
 ];
 
-export { technologies, projects , navLinks};
+export { technologies, projects, navLinks, services, socialIcons };

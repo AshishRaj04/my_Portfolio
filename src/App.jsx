@@ -13,20 +13,20 @@ import { Feed } from "@mui/icons-material";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-quatenary">
+      <div className="relative z-0 bg-background">
         <div className="w-full pt-5 ">
           <Navbar />
           <Hero />
         </div>
 
-        <About />
-        <Experience />
+        {/* <About /> */}
+        {/* <Experience />
         <Technologies />
         <Works />
-        <FeedBack />
-        <div className="relative z-0">
+        <FeedBack /> */}
+        {/* <div className="relative z-0">
           <Contact />
-        </div>
+        </div> */}
       </div>
     </BrowserRouter>
   );

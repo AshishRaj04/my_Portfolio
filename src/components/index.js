@@ -6,7 +6,7 @@ import Experience from "./Experience";
 import FeedBack from "./FeedBack";
 import Technologies from "./Technologies";
 import Works from "./Works";
-// import Model from "./Model";
+import Model from "./Model";
 export {
   Hero,
   About,
@@ -16,6 +16,6 @@ export {
   FeedBack,
   Technologies,
   Works,
-  // Model
+  Model
  
 };
