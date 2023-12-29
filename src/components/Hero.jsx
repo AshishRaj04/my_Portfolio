@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="sm:px-16 px-6 absolute inset-0 top-10 max-w-7xl mx-auto flex flex-col justify-start items-center gap-5">
         <div className="flex flex-col justify-center items-center mt-5">
           <div>
-            <h1 className="font-black text-textColor lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">
+            <h1 className="font-black text-textColorWhite dark:text-textColor lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2">
               Hi , I'm
             </h1>
             <div className="flex gap-5">
@@ -30,7 +30,7 @@ const Hero = () => {
               </h1>
             </div>
 
-            <p className="font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-textColor">
+            <p className="font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2 text-textColorWhite dark:text-textColor">
               I am a React Frontend Developer and UI designer .
             </p>
           </div>
@@ -39,17 +39,17 @@ const Hero = () => {
       <Model/>
       <div className="absolute xs:bottom-[60px] bottom-[30px] w-full flex justify-center items-center z-50">
         <a href="#about">
-          <div className="w-[35px] h-[65px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 z-50">
-            <motion.dev
+          <div className="w-[35px] h-[65px] rounded-3xl border-2 border-blue-400 border-secondary flex justify-center items-start p-2 z-50 ">
+            <motion.div
               animate={{
-                y: [0, 24, 0],
+                y: [0, 30, 0],
               }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full mb-1 bg-textColor z-50"
+              className="w-3 h-3 rounded-full mb-1 bg-blue-400 z-50"
             />
           </div>
         </a>

@@ -5,16 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // primary: "#222831",
-        // secondary: "#413543",
-        // tertiary: "#53C1DE",
-        // quatenary: "#F9F7F7",
-        // pentanary: "#EEEEEE"
+        backgroundWhite:"#FFFFFF",
         background: "#1B1B1F",
         textColor: "#DFDFD6",
+        textColorWhite:"#3C3C43",
         textHover:"#8981DB",
         card: "#202127",
         buttonBg: "#2B2F36",
+        buttonBgWhite : "#DFDFD6",
+        buttonBgWhiteHover : "#F6F6F7",
         buttonHover: "#414853",
         buttonFocus: "#747BFF",
         icon: "#DFDFD7",
@@ -44,4 +43,5 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode:"class",
 };

@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import Loader from "./Loader";
@@ -31,7 +31,6 @@ const Model = () => {
         />
         <Three />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );

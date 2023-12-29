@@ -1,37 +1,38 @@
 import { BrowserRouter } from "react-router-dom";
+import { useState } from "react";
 import {
   Navbar,
   About,
   Hero,
   Contact,
   Experience,
-  FeedBack,
   Technologies,
   Works,
 } from "./components/index";
-import { Feed } from "@mui/icons-material";
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-background">
-        <div className="w-full pt-5 ">
-          <Navbar />
-          <Hero />
+      <div className={darkMode ? "dark" : ""}>
+        <div className="relative z-0 bg-backgroundWhite dark:bg-background">
+          <div className="  w-full pt-5 ">
+            <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <Hero />
+          </div>
+          <About />
+          <Experience />
+          <Technologies />
+          <Works />
+          <div className="relative z-0">
+            <Contact />
+          </div>
         </div>
-
-        {/* <About /> */}
-        {/* <Experience />
-        <Technologies />
-        <Works />
-        <FeedBack /> */}
-        {/* <div className="relative z-0">
-          <Contact />
-        </div> */}
       </div>
     </BrowserRouter>
   );
 };
 
 export default App;
-
-//bg-hero-pattern bg-cover bg-no-repeat bg-center

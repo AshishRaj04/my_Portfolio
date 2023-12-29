@@ -143,12 +143,12 @@ const socialIcons = [
   {
     link: linkdin,
     altText: "linkdin icon",
-    url:"https://github.com/AshishRaj04"
+    url:"https://www.linkedin.com/in/ashish-raj-230239280/"
   },
   {
     link: twitterX,
     altText: " twitter icon ",
-    url:"https://github.com/AshishRaj04"
+    url:"https://x.com/adven_raj?t=TVELlwp1_mFpAKcFNA2Yyw&s=09"
   },
 ];
 
