@@ -7,27 +7,21 @@ const Three = () => {
   const computer = useGLTF("./gltf/scene.gltf");
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
-      <primitive 
-        object={computer.scene} 
-        scale={0.80}
-        position={[0,-10 , -18]}
-        
-          />
+      <hemisphereLight intensity={2} groundColor="black" />
+      <pointLight intensity={5} />
+      <primitive object={computer.scene} scale={0.8} position={[0, -10, -18]} />
     </mesh>
   );
 };
 
 const Model = () => {
   return (
-    
     <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [20, 20, 20], fov: 60 }}
+      frameloop="always"
+      shadows = "10%"
+      camera={{ position: [20, 20, 20], fov: 40 }}
       gl={{ preserveDrawingBuffer: true }}
-      className="absolute overflow-hidden z-50"
+      className="absolute overflow-hidden z-40"
     >
       <Suspense fallback={<Loader />}>
         <OrbitControls
@@ -40,10 +34,7 @@ const Model = () => {
 
       <Preload all />
     </Canvas>
-    
   );
 };
 
 export default Model;
-
-
