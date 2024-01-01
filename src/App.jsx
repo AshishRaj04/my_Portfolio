@@ -18,7 +18,7 @@ const App = () => {
     <BrowserRouter>
       <div className={darkMode ? "dark" : ""}>
         <div className="relative z-0 bg-backgroundWhite dark:bg-background">
-          <div className="  w-full pt-5 ">
+          <div className="  w-full pt-5 mb-5">
             <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <Hero />
           </div>
