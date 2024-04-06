@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <Model/>
+      {/* <Model/> */}
       <div className="absolute xs:bottom-[60px] bottom-[30px] w-full flex justify-center items-center z-50">
         <a href="#about">
           <div className="w-[35px] h-[65px] rounded-3xl border-2 border-blue-400 border-secondary flex justify-center items-start p-2 z-50 ">
